@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [ 2, 3];
+    let b = [1, 2, 3];
+    let find = true
+    for (let i = 0; i < a.length; i++) {
+        for (let i = 0; i < b.length; i++) {
+            if (a[i] !== b[i]) {
+                find = false
+                break
+            }
+        }
+    }
+    if (find) {
+        console.log('true')
+    } else {
+        console.log('false')
+    }
+
+</script>
+</body>
+</html>

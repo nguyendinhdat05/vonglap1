@@ -71,22 +71,37 @@
 
 //bài 7:
 
-    let b = 100;
-    for (let i=1 ; i<=b ; i++) {
-        if (i%3==0 && i%5==0) {
-            document.write("FizzBuzz"+'<br>')
-        }
-        else if (i%3==0 ) {
-            document.write("Fizz"+'<br>')
-        }
-        else if (i%5==0 ) {
-            document.write('Buzz'+'<br>')
-        }
-        else {
-            document.write(i+'<br>')
+    // let b = 100;
+    // for (let i=1 ; i<=b ; i++) {
+    //     if (i%3==0 && i%5==0) {
+    //         document.write("FizzBuzz"+'<br>')
+    //     }
+    //     else if (i%3==0 ) {
+    //         document.write("Fizz"+'<br>')
+    //     }
+    //     else if (i%5==0 ) {
+    //         document.write('Buzz'+'<br>')
+    //     }
+    //     else {
+    //         document.write(i+'<br>')
+    //
+    //     }
+    // }
 
+
+let a = +prompt('nhập số a');
+let b = +prompt('nhập số b');
+let c = +prompt('nhập số c');
+let d = [a,b,c];
+let dem = 0;
+if ( a !== 0 && b !== 0 && c !== 0) {
+    for ( let i = 0 ; i <=2 ; i++ ) {
+        for ( let j = 0 ; j <= 2 ; j++) {
+            for ( let k = 0 ; k <= 2 ; k++)
+                  let num = d[i]*100 + d[j]*10 + d[k]
         }
     }
+}
 </script>
 </body>
 </html>

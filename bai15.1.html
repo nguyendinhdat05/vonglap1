@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [ 3,4,5,1,2,3,4,5,6];
+    let find = true
+    for ( let i = 0 ; i < a.length-1 ; i++ ) {
+        if ( a[i] > a[i+1] ) {
+            find = false
+            break
+        }
+    }
+    if (find) {
+        document.write('a là mảng tăng dần')
+    } else {
+        document.write('a kphai là mảng tăng dần')
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bài 10.1 :
+    let a = +prompt('nhập số a')
+    let b = +prompt('nhập số b')
+    let c = +prompt('nhập số c')
+    let d = [a, b, c]
+    if (a !== b && b !== c && a !== c && a !== 0 && b !== 0 && c !== 0) {
+        let dem = 0
+        for (let i = 0; i <= d.length; i++) {
+            for (let j = 0; j <= d.length; j++) {
+                for (let k = 0; k <= d.length; k++) {
+                    if (i !== j && j !== k && i !== k) {
+                       let num = d[i] * 100 + d[j] * 10 + d[k];
+                        if ( num > 99 && num < 1000){
+                        dem++;
+                        document.write(num + '<br>')
+                       }
+                    }
+                }
+            }
+        }
+        document.write('có số cách đếm là :' + dem + '<br>')
+    } else {
+        document.write('sai điều kiện')
+    }
+</script>
+</body>
+</html>
+
+
+
+

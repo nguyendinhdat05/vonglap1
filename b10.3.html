@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('nhập a');
+    let b = +prompt('nhập b');
+    let c = +prompt('nhập c');
+    let d = [a,b,c];
+        for ( let i = 0 ; i <= d.length ; i++ ) {
+            for ( let j = 0 ; j <= d.length ; j++ ) {
+                for ( let k = 0 ; k <= d.length ; k++ ) {
+                    if ( i !== j && j !== k && i !== k ) {
+                        let num = d[i] * 100 + d[j] * 10 + d[k];
+                             if ( num > 99 && num <= 999) {
+                                 document.write(num + '<br>');
+                             }
+                    }
+                }
+            }
+         }
+
+
+</script>
+</body>
+</html>

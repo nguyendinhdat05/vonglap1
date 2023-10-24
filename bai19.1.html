@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [ 3,2,4,1,5,0];
+    let tong = 5
+    for (let i = 0; i < a.length -1; i++) {
+        for ( let j = i+1 ; j < a.length ; j++ ) {
+                if ( a[i] + a[j] === tong)  {
+                    alert(`${a[i]}  ${a[j]}`)
+            }
+        }
+    }
+</script>
+</body>
+</html>
